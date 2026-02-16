@@ -35,6 +35,7 @@ class _MyHomePageState extends State<MyHomePage> {
     super.initState();
     expenseBox = Hive.box<Expense>('expenses');
     //expenseBox.clear();
+    //expenseBox.clear();
   }
 
   @override
