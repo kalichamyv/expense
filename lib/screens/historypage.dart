@@ -34,8 +34,8 @@ Widget _searchBar(){
     child: Column(
     children: [
       Container(
-        margin: EdgeInsets.only(right: 20,top: 5),
-        padding: EdgeInsets.only(top: 10,right: 10),
+        margin: EdgeInsets.only(right: 10,top: 5),
+        padding: EdgeInsets.only(top: 15,right: 10),
         height: 10,
         width: 15,
         ),
@@ -44,13 +44,20 @@ Widget _searchBar(){
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(6),),
   suffixIcon: Icon(Icons.search),
   label: Text('Search'),
-
-        )
+        ),
       ),
     ],
     ),
   );
 }
+
 Widget _historyPage(){
-  return Column();
+  return Column(
+    children: [
+      Container(
+        padding: EdgeInsets.symmetric(vertical: 100),
+        child: Text('this page shows all your income and expense history which wa also deleted by the user'),
+      ),
+    ],
+  );
 }
